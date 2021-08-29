@@ -122,6 +122,10 @@ header .container nav .profile img {
 
 /* Start Section */
 
+section .container {
+  position: relative;
+}
+
 section .container .storie-content {
   margin-bottom: 30px;
   overflow: hidden;
@@ -177,7 +181,7 @@ section .container .content .storie-content .storie img {
 
 section .container .content {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 section .content .posts-users {
@@ -325,6 +329,10 @@ section .card-content .add-comment button {
 /* Start aside */
 aside {
   padding: 25px 0px;
+  position: sticky;
+  top: 0;
+  width: 25%;
+  height: 100vh;
 }
 
 aside .body-content .users-content {
