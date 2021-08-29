@@ -1,0 +1,402 @@
+/* Global paramétres */
+:root {
+  --border-color: #ddd;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #fafafa;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Small Screen*/
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Mediume Screen  */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Larger Screen */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* End Global Paramétre */
+
+header {
+  background-color: white;
+  border: 1px solid var(--border-color);
+  margin-bottom: 20px;
+}
+
+header .container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+header .container nav .title {
+  font-size: 22px;
+  font-style: italic;
+  text-transform: capitalize;
+}
+
+header .container nav .title a {
+  text-decoration: none;
+  color: black;
+}
+
+header .container nav .search {
+  position: relative;
+}
+
+@media (max-width: 540px) {
+  header .container nav .search {
+    display: none;
+  }
+}
+
+header .container nav .search i {
+  position: absolute;
+  z-index: 1;
+  color: #a5a7aa;
+  top: 12px;
+  left: 70px;
+  font-size: 11px;
+}
+
+header .container nav #search {
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  padding: 6px 30px;
+  border-radius: 4px;
+  position: relative;
+  outline: none;
+}
+
+header .container nav #search::placeholder {
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+header .container nav .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 222px;
+}
+
+header .container nav .icons i {
+  font-size: 28px;
+  cursor: pointer;
+}
+
+header .container nav .profile {
+  width: 30px;
+  cursor: pointer;
+}
+
+header .container nav .profile img {
+  max-width: 100%;
+}
+/* End Header */
+
+/* Start Section */
+
+section .container .storie-content {
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+
+section .container .storie-content .stories {
+  margin-right: 20px;
+}
+
+section .container .content .storie-content {
+  border: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 26px;
+}
+
+section .container .content .storie-content .storie .name-user {
+  font-size: 13px;
+}
+
+section .container .content .storie-content .storie .img {
+  width: 71px;
+  height: 71px;
+  padding: 3px;
+  position: relative;
+  border: 3px solid #e91e63;
+  border-radius: 50%;
+  margin-bottom: 6px;
+}
+
+section .container .content .storie-content .storie img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* End Content */
+
+/* Start Card */
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+section .container .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .content .posts-users {
+  width: 69%;
+}
+
+@media (max-width: 991px) {
+  section .content .posts-users {
+    width: 100%;
+  }
+}
+
+section .content aside {
+  width: 29%;
+}
+
+section .content-users {
+  width: 60%;
+}
+
+section .container .card {
+  border: 1px solid #ddd;
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+section .container .card .title {
+  background-color: white;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid; */
+}
+
+section .container .card .title .img p a {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  text-transform: capitalize;
+  margin-left: 10px;
+}
+
+section .container .card .title .img p a:hover {
+  text-decoration: underline;
+}
+
+section .container .card .title .img {
+  width: 50px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+section img {
+  max-width: 100%;
+  cursor: pointer;
+}
+
+section .container .card .content-img {
+  width: 100%;
+  /* border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd; */
+}
+
+section .container .card img {
+  max-width: 100%;
+}
+
+section .card-content .icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  padding: 12px 18px;
+}
+
+section .card-content .icons .icon-event i {
+  margin-right: 10px;
+}
+
+section .card-content .icons i {
+  font-size: 25px;
+  cursor: pointer;
+}
+
+section .card-content .likes {
+  margin-bottom: 10px;
+  padding-left: 18px;
+}
+
+section .card-content .likes span {
+  font-weight: 500;
+}
+
+section .card-content .name-user {
+  margin-bottom: 10px;
+  padding-left: 18px;
+}
+
+section .card-content .name-user span {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+section .card-content .description {
+  line-height: 1.6;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  overflow: hidden;
+}
+
+section .card-content .add-comment {
+  display: flex;
+  align-items: center;
+  padding: 18px 18px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+section .card-content .add-comment .comment {
+  border: none;
+  background-color: transparent;
+  padding: 17px;
+  width: 86%;
+}
+
+section .card-content .add-comment i {
+  font-size: 25px;
+}
+
+section .card-content .add-comment .comment::placeholder {
+  font-size: 17px;
+}
+
+section .card-content .add-comment button {
+  border: none;
+  background-color: transparent;
+  color: #64bef9;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* End Card */
+
+/* End Section */
+
+/* Start aside */
+aside {
+  padding: 25px 0px;
+}
+
+aside .body-content .users-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+aside .body-content .img {
+  width: 40px;
+  display: flex;
+  align-items: center;
+}
+
+aside .body-content .name {
+  margin-left: 15px;
+}
+
+aside .body-content .desc {
+  color: #ddd;
+  font-size: 14px;
+}
+
+aside .body-content .name h4 {
+  margin-bottom: 10px;
+}
+
+aside .body-content .name h4 a {
+  text-decoration: none;
+  color: black;
+}
+
+aside .body-content button {
+  border: none;
+  background-color: transparent;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
+  color: #64bef9;
+  cursor: pointer;
+}
+
+aside .suggestion .sugg-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+aside .suggestion .sugg-content p {
+  color: #959595;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+aside .suggestion a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+aside .suggestion .user {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+aside .suggestion .profile {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 991px) {
+  aside {
+    display: none;
+  }
+}
+/* End aside */
