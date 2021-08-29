@@ -139,6 +139,12 @@ section .container .content .storie-content {
   padding: 26px;
 }
 
+@media (max-width: 991px) {
+  section .container .content .storie-content {
+    padding: 10px;
+  }
+}
+
 section .container .content .storie-content .storie .name-user {
   font-size: 13px;
 }
@@ -153,6 +159,13 @@ section .container .content .storie-content .storie .img {
   margin-bottom: 6px;
 }
 
+@media (max-width: 991px) {
+  section .container .content .storie-content .storie .img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
 section .container .content .storie-content .storie img {
   max-width: 100%;
   cursor: pointer;
@@ -162,14 +175,9 @@ section .container .content .storie-content .storie img {
 
 /* Start Card */
 
-section {
-  display: flex;
-  justify-content: center;
-}
-
 section .container .content {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 section .content .posts-users {
@@ -182,13 +190,9 @@ section .content .posts-users {
   }
 }
 
-section .content aside {
+/* section .content aside {
   width: 29%;
-}
-
-section .content-users {
-  width: 60%;
-}
+} */
 
 section .container .card {
   border: 1px solid #ddd;
