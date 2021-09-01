@@ -112,12 +112,78 @@ header .container nav .icons i {
 
 header .container nav .profile {
   width: 30px;
+  height: 30px;
   cursor: pointer;
+  position: relative;
+  border: 1px solid black;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 header .container nav .profile img {
   max-width: 100%;
 }
+
+/* Start card-Profile */
+header .card-profile {
+  background-color: white;
+  position: absolute;
+  right: -20px;
+  top: 44px;
+  width: 238px;
+  z-index: 1;
+
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px 5px #ddd;
+}
+
+header .card-profile > div {
+  margin-bottom: 10px;
+  padding: 6px 10px;
+}
+
+header .card-profile > div:hover {
+  background-color: #eee;
+}
+
+header .card-profile div:first-child {
+  position: relative;
+}
+
+header .card-profile div:first-child::after {
+  content: "";
+  position: absolute;
+  top: -28px;
+  right: 26px;
+  border-style: solid;
+  border-color: transparent transparent white transparent;
+  border-width: 10px;
+}
+
+header .container nav .profile i {
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+header .container nav .profile span {
+  font-weight: 400;
+}
+
+header .container nav .profile .card-profile div:last-child {
+  padding-top: 13px;
+  padding-left: 15px;
+}
+
+.card-profile hr {
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+.hidden {
+  opacity: 0;
+}
+/* End card-Profile */
+
 /* End Header */
 
 /* Start Section */
@@ -173,6 +239,45 @@ section .container .content .storie-content .storie .img {
 section .container .content .storie-content .storie img {
   max-width: 100%;
   cursor: pointer;
+}
+
+section .post-users-content {
+  position: relative;
+}
+
+section .post-users-content .arrow-right {
+  position: absolute;
+  top: 57px;
+  right: 6px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  /* padding: 2px 7px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+section .post-users-content .arrow-left {
+  position: absolute;
+  top: 57px;
+  left: 21px;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1;
+  /* padding: 2px 7px; */
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0;
 }
 
 /* End Content */
